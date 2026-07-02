@@ -148,7 +148,6 @@ def donate():
         result, full_response = check_card(num, mm, yy, cvv)
 
         output = f"{num}|{mm}|{yy}|{cvv} | {result} | @c4rdable\n\n"
-        output += str(full_response)
 
         return output, 200, {'Content-Type': 'text/plain; charset=utf-8'}
 
